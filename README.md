@@ -96,4 +96,4 @@ This indicates that the model is reliable for heart disease prediction.
 ## 🚀 How to Run the Project
 1. Clone the repository
    ```bash
-   git clone https://github.com/your-username/heart-disease-prediction.git
+ git clone https://github.com/Akeem786/heart-disease-prediction.git
