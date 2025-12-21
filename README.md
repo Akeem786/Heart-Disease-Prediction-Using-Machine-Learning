@@ -2,14 +2,14 @@
 
 ## 📌 Project Overview
 This project focuses on predicting heart disease using multiple machine learning classification algorithms.  
-The goal is to identify whether a patient is likely to have heart disease based on clinical and demographic features.
+The objective is to determine whether a patient is likely to have heart disease based on medical and demographic features.
 
-Several models were trained, evaluated, and compared to select the best-performing model using standard evaluation metrics.
+Multiple models were trained, evaluated, and compared to identify the best-performing algorithm.
 
 ---
 
 ## 📂 Dataset
-- **Source:** Heart Disease Dataset (`heart.csv`)
+- **Dataset Name:** Heart Disease Dataset (`heart.csv`)
 - **Target Variable:** `HeartDisease`
   - `1` → Patient has heart disease
   - `0` → Patient does not have heart disease
@@ -20,7 +20,9 @@ Several models were trained, evaluated, and compared to select the best-performi
 - Chest Pain Type  
 - Resting Blood Pressure  
 - Cholesterol  
-- Max Heart Rate  
+- Fasting Blood Sugar  
+- Resting ECG  
+- Maximum Heart Rate  
 - Exercise-Induced Angina  
 - ST Slope  
 
@@ -29,13 +31,13 @@ Several models were trained, evaluated, and compared to select the best-performi
 ## ⚙️ Data Preprocessing
 - Separated features (`X`) and target (`y`)
 - Applied **One-Hot Encoding** for categorical variables
-- Performed **Train-Test Split (80% / 20%)**
-- Applied **Feature Scaling** for distance-based models (Logistic Regression, SVM, KNN)
+- Split the dataset into **Training (80%)** and **Testing (20%)**
+- Applied **Feature Scaling** for Logistic Regression, SVM, and KNN
 
 ---
 
 ## 🤖 Machine Learning Models Implemented
-The following classification models were trained and evaluated:
+The following classification models were implemented and compared:
 
 - Logistic Regression  
 - K-Nearest Neighbors (KNN)  
@@ -49,37 +51,37 @@ The following classification models were trained and evaluated:
 
 ---
 
-## 📊 Model Evaluation Metrics
-Each model was evaluated using:
+## 📊 Model Evaluation
+Each model was evaluated using the following metrics:
 - Accuracy  
 - Precision  
 - Recall  
 - F1-Score  
 
-A comparison table was created to identify the best-performing model.
+A comparison table was created to rank models based on performance.
 
 ---
 
-## 🏆 Best Model
+## 🏆 Best Performing Model
 - **Extra Trees Classifier**
 - Achieved approximately **91% accuracy**
-- Provided the best balance between precision, recall, and F1-score
+- Provided the best balance of precision, recall, and F1-score
 
 ---
 
 ## 📈 Confusion Matrix Analysis
-The confusion matrix of the best model shows:
+The confusion matrix of the selected model shows:
 - High True Positives and True Negatives
-- Low False Negatives, which is crucial in medical diagnosis
+- Low False Negatives, which is crucial in healthcare predictions
 
-This indicates that the model is reliable for heart disease prediction.
+This indicates strong and reliable predictive performance.
 
 ---
 
 ## 🧠 Key Learnings
-- Ensemble models outperform single classifiers on structured medical data
-- Recall is a critical metric for healthcare-related prediction problems
-- Proper preprocessing and model comparison significantly improve performance
+- Ensemble learning models outperform individual classifiers on structured medical data
+- Recall is a critical metric for healthcare-related problems
+- Comparing multiple models helps in selecting the most reliable solution
 
 ---
 
@@ -94,6 +96,7 @@ This indicates that the model is reliable for heart disease prediction.
 ---
 
 ## 🚀 How to Run the Project
+
 1. Clone the repository
    ```bash
- git clone https://github.com/Akeem786/heart-disease-prediction.git
+   git clone https://github.com/Akeem786/heart-disease-prediction.git
